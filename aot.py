@@ -1,4 +1,4 @@
-# Algorithm of Thoughts (AoT) Implementation
+# Atom of Thoughts (AoT) Implementation
 # Performs question decomposition and multi-step reasoning
 
 import asyncio

@@ -1,10 +1,26 @@
-# AOT-GRPO: Algorithm of Thoughts with Generative Representational Prompt Optimization
+# AOT-GRPO: Atom of Thoughts with Group Relative Policy Optimization
+
+AoT enhances LLM performance by breaking down complex queries into smaller, independent "atomic questions" and organizing them into a directed acyclic graph (DAG) based on their dependencies. This Markov-like process minimizes reliance on lengthy historical context, reducing computational overhead and noise while improving efficiency and accuracy. For tasks requiring multi-step reasoning—such as multi-hop question answering (e.g., HotpotQA) or mathematical problem-solving—AoT’s structured approach is highly effective.
+
+For broader applications where reasoning isn’t the primary focus—such as simple question answering, text generation, or tasks requiring minimal multi-step logic—GRPO’s versatility shines.
+
+By refining prompts, it can improve overall model outputs across a wide range of use cases without needing the structural overhaul that AoT provides.
+
+AoT and GRPO operate on different levels: AoT restructures the reasoning process, while GRPO optimizes the input prompts. 
+
+This complementary nature suggests potential synergy.
+
+For instance, GRPO could refine the phrasing of AoT’s atomic questions or improve how the model transitions between them, enhancing the overall efficiency and accuracy of the reasoning pipeline.
+For Reasoning-Intensive Tasks AoT seems the primary approach. Its ability to decompose and manage complex reasoning makes it superior for tasks like multi-hop QA or problem-solving.
+For General Improvement GRPO is the go-to choice if you need a versatile, task-agnostic boost in performance across diverse applications.
+
+Combining AoT and GRPO could yield enhanced results, especially if GRPO is tailored to support AoT’s atomic reasoning framework. This hybrid approach could be particularly powerful for applications requiring both robust reasoning and optimized model responses.
 
 This repository implements the combination of two powerful techniques for enhancing LLM performance:
 
-1. **Algorithm of Thoughts (AoT)**: A technique that decomposes complex problems into simpler sub-problems, solving them individually and then combining their solutions.
+1. **Atom of Thoughts (AoT)**: A technique that decomposes complex problems into simpler sub-problems, solving them individually and then combining their solutions.
 
-2. **Generative Representational Prompt Optimization (GRPO)**: A test-time optimization technique that enhances model inputs by optimizing learnable tokens to improve the quality of generated outputs.
+2. **Group Relative Policy Optimization (GRPO)**: A test-time optimization technique that enhances model inputs by optimizing learnable tokens to improve the quality of generated outputs.
 
 ## Installation
 
@@ -19,7 +35,7 @@ pip install -r requirements.txt
 
 ## Features
 
-- Question decomposition via Algorithm of Thoughts
+- Question decomposition via AoT
 - Prompt optimization via GRPO
 - Support for multiple dataset formats (GSM8K, MMLU, HotpotQA, etc.)
 - Support for different reasoning types (math, multi-choice, multi-hop QA)
@@ -64,8 +80,8 @@ Available arguments:
 
 ## Project Structure
 
-- `aot.py`: Implementation of Algorithm of Thoughts
-- `grpo.py`: Implementation of Generative Representational Prompt Optimization
+- `aot.py`: Implementation of Atom of Thoughts
+- `grpo.py`: Implementation of Group Relative Policy Optimization
 - `dataset.py`: Utilities for loading and processing datasets
 - `aot_grpo.py`: Integration of AoT and GRPO approaches
 - `run_test.sh`: Helper script for running tests
@@ -82,7 +98,7 @@ Available arguments:
 
 This project stands on the shoulders of giants and builds upon several groundbreaking works:
 
-### Algorithm of Thoughts (AoT)
+### Atom of Thoughts (AoT)
 Implementation based on the research by Fengwei Teng et al. in their paper "Atom of Thoughts for Markov LLM Test-Time Scaling":
 
 ```bibtex
@@ -94,7 +110,7 @@ Implementation based on the research by Fengwei Teng et al. in their paper "Atom
 }
 ```
 
-### Generative Representational Prompt Optimization (GRPO)
+### Group Relative Policy Optimization (GRPO)
 The concept of optimizing prompts through gradient-based methods is inspired by various techniques in the field, with conceptual acknowledgement to Andriy Burkov, author of "The Hundred-Page Machine Learning Book," for his explanations of related optimization techniques.
 
 ### Models and Tools
@@ -116,7 +132,7 @@ If you use this code in your research, please cite:
 ```bibtex
 @misc{aot-grpo,
   author = {Emanuele Mazzitelli},
-  title = {AOT-GRPO: Algorithm of Thoughts with Generative Representational Prompt Optimization},
+  title = {AOT-GRPO: Atom of Thoughts with Group Relative Policy Optimization},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},

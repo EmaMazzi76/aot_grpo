@@ -1,4 +1,4 @@
-# Generative Representational Prompt Optimization (GRPO)
+# Group Relative Policy Optimization (GRPO)
 # Optimizes prompts at test time to improve model responses
 
 import torch

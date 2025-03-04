@@ -22,8 +22,8 @@ pip install -r requirements.txt
 - **Error Handling**: Use ValueError for invalid inputs, implement retry patterns for operations that may fail
 
 ## Project Structure
-- `aot.py`: Algorithm of Thoughts implementation for question decomposition
-- `grpo.py`: Generative Representational Prompt Optimization
+- `aot.py`: Atom of Thoughts implementation for question decomposition
+- `grpo.py`: Group Relative Policy Optimization
 - `aot_grpo.py`: Integration of AOT and GRPO approaches
 - `dataset.py`: Dataset handling utilities
 

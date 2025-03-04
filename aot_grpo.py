@@ -1,5 +1,5 @@
 # AOT-GRPO Integration
-# Combines Algorithm of Thoughts with Generative Representational Prompt Optimization
+# Combines Atom of Thoughts with Group Relative Policy Optimization
 
 import asyncio
 import torch
