@@ -1,0 +1,25 @@
+# AOT-GRPO dependencies
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+torch>=1.13.0
+transformers>=4.26.0
+datasets>=2.10.0
+tqdm>=4.64.0
+numpy>=1.24.0
+
+# For async operations
+nest_asyncio>=1.5.6
+
+# Optional: for better performance with CUDA
+accelerate>=0.18.0
+sentencepiece>=0.1.97
+protobuf>=3.20.0
+
+# Optional: for better MPS support on macOS
+# No additional packages needed as MPS is built into PyTorch for macOS
+
+# For developers
+pytest>=7.3.1
+black>=23.3.0
+flake8>=6.0.0
